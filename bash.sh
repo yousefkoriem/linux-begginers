@@ -23,6 +23,7 @@ mv .alias/ ~/
 clear
 printf "You can run update and upgrade by typing <update>\n"
 sleep 1
+printf "\n"
 printf "Want to try? \033[93m\"type update\" \033[0m"
 read b
 if [ $b == 'update' ]
@@ -38,6 +39,7 @@ clear
 printf "Next thing\n"
 printf "You can run fix if you have problem in packages by typing <fix>\n"
 sleep 1
+printf "\n"
 printf "Want to try? \033[93m\"type fix\" \033[0m"
 read b
 if [ $b == 'fix' ]
