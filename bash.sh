@@ -25,6 +25,21 @@ printf "Want to try? \033[93m\"type update\" "
 read b
 if [ $b == 'update' ]
 then
-update
+bash ~/.alias/update.sh
+else
+printf "Ok next thing\n"
+sleep 2
+
+fi
+clear
+printf "Next thing\n"
+printf "You can run fix if you have problem in packages by typing <fix>\n"
+sleep 1
+printf "Want to try? \033[93m\"type fix\" "
+read b
+if [ $b == 'fix' ]
+then
+bash ~/.alias/fix.sh
+else
 fi
 fi
