@@ -16,8 +16,8 @@ sleep 5
 clear
 
 else
-printf "/home/$USER/.alias/update.sh\n" > .bash_aliases
-printf "/home/$USER/.alias/fix.sh\n" >> .bash_aliases
+printf "bash /home/$USER/.alias/update.sh\n" > .bash_aliases
+printf "bash /home/$USER/.alias/fix.sh\n" >> .bash_aliases
 mv .bash_aliases ~/
 mv .alias/ ~/
 clear
