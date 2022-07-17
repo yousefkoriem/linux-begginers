@@ -16,8 +16,8 @@ sleep 5
 clear
 
 else
-printf "bash /home/$USER/.alias/update.sh\n" > .bash_aliases
-printf "bash /home/$USER/.alias/fix.sh\n" >> .bash_aliases
+printf "alias update='bash /home/$USER/.alias/update.sh'\n" > .bash_aliases
+printf "alias fix='bash /home/$USER/.alias/fix.sh'\n" >> .bash_aliases
 mv .bash_aliases ~/
 mv .alias/ ~/
 clear
@@ -27,7 +27,7 @@ printf "Want to try? \033[93m\"type update\" \033[0m"
 read b
 if [ $b == 'update' ]
 then
-update
+~/.alias/update.sh
 else
 echo
 fi
@@ -42,7 +42,7 @@ printf "Want to try? \033[93m\"type fix\" \033[0m"
 read b
 if [ $b == 'fix' ]
 then
-fix
+~/.alias/fix.sh
 else
 echo
 fi
@@ -53,7 +53,7 @@ sleep 3
 clear
 printf "That's all\n"
 sleep 3
-printf "\033[92mYour Terminal will close to apply changes \033[0m"
+printf "\033[92mClose your terminal to apply changes \033[0m"
 sleep 5
 clear
 printf "\033[92mGood bye, See you soon \033[0m\n"
