@@ -28,7 +28,7 @@ printf "Want to try? \033[93m\"type update\" \033[0m"
 read b
 if [ $b == 'update' ]
 then
-~/.alias/update.sh
+bash ~/.alias/update.sh
 else
 echo
 fi
@@ -44,7 +44,7 @@ printf "Want to try? \033[93m\"type fix\" \033[0m"
 read b
 if [ $b == 'fix' ]
 then
-~/.alias/fix.sh
+bash ~/.alias/fix.sh
 else
 echo
 fi
