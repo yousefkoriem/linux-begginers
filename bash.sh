@@ -41,5 +41,6 @@ if [ $b == 'fix' ]
 then
 bash ~/.alias/fix.sh
 else
+printf "OK goodbye for now\n"
 fi
 fi
