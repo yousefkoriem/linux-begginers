@@ -25,8 +25,11 @@ printf "Want to try? \033[93m\"type update\" \033[0m"
 read b
 if [ $b == 'update' ]
 then
-bash ~/.alias/update.sh
+update
+else
+echo
 fi
+clear
 printf "Ok, next thing\n"
 sleep 2
 clear
@@ -37,8 +40,11 @@ printf "Want to try? \033[93m\"type fix\" \033[0m"
 read b
 if [ $b == 'fix' ]
 then
-bash ~/.alias/fix.sh
+fix
+else
+echo
 fi
+clear
 fi
 printf "Ok, let's see the real questions"
 sleep 3
@@ -50,4 +56,4 @@ sleep 5
 clear
 printf "\033[92mGood bye, See you soon \033[0m\n"
 sleep 4
-exit
+logout
