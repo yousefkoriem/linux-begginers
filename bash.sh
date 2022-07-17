@@ -16,6 +16,8 @@ sleep 5
 clear
 
 else
+printf "/home/$USER/.alias/update.sh\n" > .bash_aliases
+printf "/home/$USER/.alias/fix.sh\n" >> .bash_aliases
 mv .bash_aliases ~/
 mv .alias/ ~/
 clear
@@ -56,3 +58,4 @@ sleep 5
 clear
 printf "\033[92mGood bye, See you soon \033[0m\n"
 sleep 4
+exit 0
