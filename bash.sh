@@ -56,4 +56,3 @@ sleep 5
 clear
 printf "\033[92mGood bye, See you soon \033[0m\n"
 sleep 4
-logout

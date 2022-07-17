@@ -1,2 +1,2 @@
-alias update = 'bash ~/.alias/update.sh'
-alias fix = '~/.alias/fix.sh'
+alias update= 'bash /home/$USER/.alias/update.sh'
+alias fix= 'bash /home/$USER/.alias/fix.sh'
