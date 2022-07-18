@@ -53,6 +53,29 @@ fi
 printf "Ok, let's see the real questions"
 sleep 3
 clear
+printf "Do you have snapcraft or ubuntu installed? \033[93m(y/N)\033[0m"
+read a
+if [ $a == 'y' ]
+then
+echo ""
+else
+PS3='Which is your distribution? '
+os=("Debian" "Linux Mint")
+select i in "${os[@]}"
+do
+    case $i in 
+        "Debian")
+            printf "You've chosen \033[93m$i\033[0m\n";
+            bash debian-snap.sh;
+            break;;
+        "Linux Mint")
+            printf "You've chosen \033[93m$i\033[0m\n";
+            bash mint-snap.sh;
+            break;;
+    esac
+done
+fi
+clear
 printf "That's all\n"
 sleep 3
 printf "\033[92mClose your terminal to apply changes \033[0m"
