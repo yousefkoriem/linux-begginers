@@ -20,14 +20,14 @@ clear
 printf "We will start with shorthands\n\n"
 sleep 1
 
-printf "Do you want to update system by typing \"\033[1;0mUpdate\033[0m\"(Y/n): "
+printf "Do you want to update system by typing \"\033[1mUpdate\033[0m\"(Y/n): "
 read a
 
 if [[ -z "$a" || "$a" == "Y" || "$a" == "y" ]]
 then
 	touch ~/.bash_aliases
 	printf "alias update='sudo apt update && sudo apt upgrade -y'" >> ~/.bash_aliases 
-	printf "Now you can just type \033[1;0mUpdate\033[0m To update your apps\n"
+	printf "Now you can just type \033[1mUpdate\033[0m To update your apps\n"
 	sleep 2
 else
 	printf "Ok we will skip it\n"
