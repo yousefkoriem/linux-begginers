@@ -1,3 +1,4 @@
+#!/bin/bash
 clear
 printf "\033[93mCreated by \033[1;94mBlueFox\033[0m\n"
 sleep 3
